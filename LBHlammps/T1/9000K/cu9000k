@@ -1,0 +1,27 @@
+units metal
+atom_style atomic
+lattice fcc 3.61
+region box block 0 5 0 5 0 5
+create_box 1 box
+create_atoms 1 box
+mass 1 64
+velocity all create 9000 90000
+
+pair_style lj/cut 3.6
+pair_coeff 1 1 0.167 2.314 3.6
+neighbor 2.0 bin
+neigh_modify every 20 delay 0 check no
+
+fix 1 all nvt temp 9000 9000 100
+
+thermo 1000
+thermo_style custom step temp press vol pe ke etotal enthalpy
+thermo_modify flush yes
+compute 1 all orientorder/atom degrees 3 4 6 8
+dump 1 all custom 1000 dump.traj id type c_1[2] c_1[3]
+run 1000000
+
+
+
+
+

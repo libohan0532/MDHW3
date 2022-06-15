@@ -1,0 +1,86 @@
+
+Module                          : Amorphous Cell
+Version                         : 2019
+Build date                      : Oct 16 2018
+Host                            : DESKTOP-F59EIB4
+Operating system                : Windows
+Task started                    : Tue Jun 14 03:57:40 2022
+
+
+Random number seed              : 582927921
+
+
+---- Amorphous Cell calculation ----
+
+Task                            : Construction
+Density                         : 1.000 g/cc
+Number of frames                : 1
+Optimize geometry               : yes
+Loading steps                   : 1000
+Check ring spearing             : yes
+Restrain rings                  : no
+Check close contacts            : no
+Check energies                  : yes
+Bias temperature                : 298.000 K
+Look ahead                      : 1
+
+Framework charge                : 0.000 e per cell
+
+ | Component   | Charge      | Loading     |
+ |             |             |             |
+ |__________________________________________
+ | H2O         |       0.000 |         100 |
+ | pentanol    |       0.000 |         100 |
+
+
+
+
+---- Construction task parameters ----
+
+Ramp density                    : no
+
+
+
+---- Energy parameters ----
+
+Forcefield                      : COMPASS (Version 2.8)
+Charges                         : Forcefield assigned
+Electrostatic terms:
+  Summation method              : Ewald
+  Accuracy                      : 0.001 kcal/mol
+  Buffer width                  : 0.5 A
+
+van der Waals terms:
+  Summation method              : Atom based
+  Truncation method             : Cubic spline
+  Cutoff distance               : 12.5 A
+  Spline width                  : 1 A
+  Buffer width                  : 0.5 A
+
+
+
+---- Configurational Bias Monte Carlo method parameters ----
+
+ | Component   | Head bias   | Torsion     | Torsion     |
+ |             | steps       | twisters    | bias steps  |
+ |________________________________________________________
+ | H2O         |          10 |           0 |             |
+ | pentanol    |          10 |           0 |             |
+
+
+
+---- Geometry optimization ----
+
+Energy units          : kcal/mol
+
+   Frame     Converged         Total      Non-bond        H-bond van der Waals Electrostatic        3-Body      Diagonal          Bond         Angle       Torsion     Inversion   Cross terms
+
+       1            No     -3225.382     -1958.033         0.000      -312.310     -1645.724         0.000     -1161.111        42.629       129.423     -1333.163         0.000      -106.238
+
+
+
+Task terminated                 : Tue Jun 14 03:58:31 2022
+
+Total CPU time used             : 51 seconds
+
+Termination status              : Normal

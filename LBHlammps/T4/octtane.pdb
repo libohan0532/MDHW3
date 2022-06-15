@@ -1,0 +1,54 @@
+REMARK   This PDB file was created by CS Chem3D.
+HETATM    1  C           1      -0.648  -0.414   0.006                      C 
+HETATM    2  C           1       0.648   0.414  -0.006                      C 
+HETATM    3  H           1      -1.327  -0.025   0.802                      H 
+HETATM    4  H           1      -1.174  -0.292  -0.970                      H 
+HETATM    5  H           1       1.327   0.025  -0.802                      H 
+HETATM    6  H           1       1.174   0.292   0.970                      H 
+HETATM    7  C           1      -0.375  -1.906   0.255                      C 
+HETATM    8  H           1       0.304  -2.296  -0.541                      H 
+HETATM    9  H           1       0.150  -2.029   1.232                      H 
+HETATM   10  C           1      -1.670  -2.734   0.267                      C 
+HETATM   11  H           1      -2.352  -2.349   1.063                      H 
+HETATM   12  H           1      -2.199  -2.616  -0.709                      H 
+HETATM   13  C           1       0.375   1.906  -0.255                      C 
+HETATM   14  H           1      -0.304   2.296   0.541                      H 
+HETATM   15  H           1      -0.150   2.029  -1.232                      H 
+HETATM   16  C           1       1.394   4.223  -0.516                      C 
+HETATM   17  H           1       2.199   2.616   0.709                      H 
+HETATM   18  H           1       2.352   2.349  -1.063                      H 
+HETATM   19  C           1       1.670   2.734  -0.267                      C 
+HETATM   20  C           1      -1.394  -4.223   0.516                      C 
+HETATM   21  H           1       0.891   4.380  -1.497                      H 
+HETATM   22  H           1       0.738   4.647   0.278                      H 
+HETATM   23  H           1       2.341   4.809  -0.522                      H 
+HETATM   24  H           1      -2.341  -4.809   0.522                      H 
+HETATM   25  H           1      -0.738  -4.647  -0.278                      H 
+HETATM   26  H           1      -0.891  -4.380   1.497                      H 
+CONECT    1    2    3    4    7
+CONECT    2    1    5    6   13
+CONECT    3    1
+CONECT    4    1
+CONECT    5    2
+CONECT    6    2
+CONECT    7    1    8    9   10
+CONECT    8    7
+CONECT    9    7
+CONECT   10    7   11   12   20
+CONECT   11   10
+CONECT   12   10
+CONECT   13    2   14   15   19
+CONECT   14   13
+CONECT   15   13
+CONECT   16   21   22   23   19
+CONECT   17   19
+CONECT   18   19
+CONECT   19   17   18   13   16
+CONECT   20   10   24   25   26
+CONECT   21   16
+CONECT   22   16
+CONECT   23   16
+CONECT   24   20
+CONECT   25   20
+CONECT   26   20
+END

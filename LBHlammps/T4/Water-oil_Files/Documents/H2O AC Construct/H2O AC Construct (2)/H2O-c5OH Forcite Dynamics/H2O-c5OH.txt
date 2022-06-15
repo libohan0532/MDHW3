@@ -1,0 +1,66 @@
+Forcite
+-------
+Task             : Dynamics
+Version          : 2019
+Build date       : Oct 16 2018
+Host             : DESKTOP-F59EIB4
+Threads          : Parallel 16
+Operating system : Windows
+Task started     : Tue Jun 14 04:00:53 2022
+
+---- Dynamics parameters ----
+
+Ensemble                        : NVT
+Temperature                     : 298.00 K
+  Control method                : Nose
+  Q ratio                       : 0.0100000
+Timestep                        : 1.00 fs
+Number of steps                 : 100000
+Duration                        : 100 ps
+Initial velocities              : Random
+Random number seed              : 1655150453
+
+---- Energy parameters ----
+
+Forcefield                      : COMPASS (Version 2.8)
+Charges                         : Forcefield assigned
+Electrostatic terms:
+  Summation method              : Ewald
+  Accuracy                      : 0.001 kcal/mol
+  Buffer width                  : 0.5 A
+
+van der Waals terms:
+  Summation method              : Atom based
+  Truncation method             : Cubic spline
+  Cutoff distance               : 12.5 A
+  Spline width                  : 1 A
+  Long range correction         : YES
+  Buffer width                  : 0.5 A
+
+
+---- Thermostat ----
+
+Nose mass parameter, Q mass: 37.29 kcal/mol*ps^2
+
+
+
+---- Dynamics summary ----
+
+                             Initial        Final      Average    Std. Dev.
+                             -------        -----      -------    ---------
+Tot. energy (kcal/mol)     -1398.001       27.547      100.417      190.168
+Pot. energy (kcal/mol)     -3262.501    -1841.736    -1764.055      111.009
+Kin. energy (kcal/mol)      1864.500     1869.282     1864.472       93.697
+Tot. enthalpy (kcal/mol)     941.250      985.803     1685.173      523.956
+Temperature (K)              298.000      298.764      297.996       14.975
+Pressure (GPa)                 0.922        0.378        0.625        0.169
+Volume (A^3)               17629.113    17629.113    17629.113        0.000
+Density (g/cm^3)               1.000        1.000        1.000        0.000
+
+
+
+
+Task terminated               : Tue Jun 14 04:51:59 2022
+Total CPU time used by Forcite: 49:54 minutes (2993.72s)
+
+Termination status : Normal
